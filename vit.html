@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VITEEE Application Form</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f2f2f2;
+  }
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  h2, h3 {
+    text-align: center;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="date"],
+  input[type="number"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  input[type="radio"] {
+    margin-right: 5px;
+  }
+  input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  p {
+    margin-bottom: 15px;
+  }
+</style>
+</head>
+<body>
+<h2>VITEEE Application Form</h2>
+<form action="#" method="POST">
+  <h3>Personal Information:</h3>
+  <label for="fullname">Full Name:</label>
+  <input type="text" id="fullname" name="fullname" required>
+  
+  <label for="gender">Gender:</label>
+  <input type="radio" id="male" name="gender" value="male"> <label for="male">Male</label>
+  <input type="radio" id="female" name="gender" value="female"> <label for="female">Female</label>
+  <input type="radio" id="other" name="gender" value="other"> <label for="other">Other</label>
+  
+  <label for="dob">Date of Birth:</label>
+  <input type="date" id="dob" name="dob" required>
+  
+  <label for="nationality">Nationality:</label>
+  <input type="text" id="nationality" name="nationality" required>
+  
+  <label for="email">Email Address:</label>
+  <input type="email" id="email" name="email" required>
+  
+  <label for="phone">Contact Number:</label>
+  <input type="tel" id="phone" name="phone" required>
+  
+  <label for="address">Address:</label>
+  <textarea id="address" name="address" rows="4" required></textarea>
+  
+  <h3>Academic Information:</h3>
+  <label for="school">School/College Name:</label>
+  <input type="text" id="school" name="school" required>
+  
+  <label for="board">Board/University:</label>
+  <input type="text" id="board" name="board" required>
+  
+  <label for="year">Year of Passing/Appearing:</label>
+  <input type="number" id="year" name="year" required>
+  
+  <label for="percentage">Percentage/CGPA in Class 10:</label>
+  <input type="text" id="percentage" name="percentage" required>
+  
+  <label for="subjects">Subjects in Class 12:</label>
+  <input type="text" id="subjects" name="subjects" required>
+  
+  <h3>Engineering Stream Preferences:</h3>
+  <label for="preference1">1st Choice of Engineering Branch:</label>
+  <input type="text" id="preference1" name="preference1" required>
+  
+  <label for="preference2">2nd Choice of Engineering Branch:</label>
+  <input type="text" id="preference2" name="preference2" required>
+  
+  <label for="preference3">3rd Choice of Engineering Branch:</label>
+  <input type="text" id="preference3" name="preference3" required>
+  
+  <h3>Additional Information:</h3>
+  <label for="previousattempt">Have you appeared for VITEEE before?</label>
+  <input type="radio" id="yes" name="previousattempt" value="yes"> <label for="yes">Yes</label>
+  <input type="radio" id="no" name="previousattempt" value="no"> <label for="no">No</label>
+  
+  <label for="attemptyear">If yes, specify the year(s) of attempt(s):</label>
+  <input type="text" id="attemptyear" name="attemptyear">
+  
+  <label for="source">How did you hear about VITEEE?</label>
+  <input type="text" id="source" name="source" required>
+  
+  <h3>Declaration:</h3>
+  <p>I hereby declare that all the information provided above is true to the best of my knowledge. I understand that any discrepancy found in the provided information may lead to the cancellation of my candidature.</p>
+  <label for="signature">Signature:</label>
+  <input type="text" id="signature" name="signature" required>
+  
+  <label for="date">Date:</label>
+  <input type="date" id="date" name="date" required>
+  
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
